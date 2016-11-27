@@ -44,7 +44,7 @@ namespace CK.System.Disposable
             var handle = Interlocked.Exchange(ref action, null);
 
             if (handle != null)
-                action();
+                handle();
         }
     }
 }
